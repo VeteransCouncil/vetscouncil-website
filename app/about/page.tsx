@@ -1,5 +1,12 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Users, Award, Landmark } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about the Veterans Council of Highlands County (VCOHC) — our mission, history, and 501(c)(3) nonprofit status serving veterans in Sebring, Florida since 1995.",
+};
 
 const values = [
   {

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Facebook } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -59,7 +59,16 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-4">
+          <a
+            href="https://www.facebook.com/VCOHC/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Follow us on Facebook"
+            className="text-khaki-light/90 hover:text-gold-light"
+          >
+            <Facebook className="h-5 w-5" />
+          </a>
           <a
             href="tel:8639914165"
             className="flex items-center gap-2 text-sm text-khaki-light/90 hover:text-white"
@@ -96,6 +105,15 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <a
+            href="https://www.facebook.com/VCOHC/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 px-3 py-3 text-sm font-medium text-khaki-light/90 hover:bg-white/10 hover:text-white"
+          >
+            <Facebook className="h-4 w-4" />
+            Follow us on Facebook
+          </a>
           <Button asChild className="mt-2 w-full bg-oldglory-red hover:bg-oldglory-darkred text-white">
             <Link href="/donate" onClick={() => setOpen(false)}>
               Donate
