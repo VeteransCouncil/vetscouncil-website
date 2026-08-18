@@ -1,6 +1,13 @@
 import { ExternalLink, Phone, LifeBuoy, MapPin, Mail, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Veteran Resources",
+  description:
+    "VA benefits links, the Highlands County Veteran Services Office, the Sebring VA Clinic, and local community care providers for Highlands County veterans.",
+};
 
 const resourceGroups = [
   {
