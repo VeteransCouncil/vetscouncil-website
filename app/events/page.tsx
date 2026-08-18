@@ -1,6 +1,13 @@
 import { Calendar, MapPin, Clock, AlertTriangle } from "lucide-react";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Events & Calendar",
+  description:
+    "Upcoming Veterans Council of Highlands County meetings and military observances, including the monthly council meeting and the Veterans Day Parade in Sebring, FL.",
+};
 
 const MEETING_LOCATION = "7209 S George Blvd, Sebring, FL 33875";
 const MEETING_TIME = "Social hour 6:00 PM • Meeting 7:00 PM";

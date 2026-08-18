@@ -9,6 +9,13 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Programs & Services",
+  description:
+    "Free VA benefits navigation, emergency housing assistance, employment services, education referrals, and peer support programs for Highlands County veterans and their families.",
+};
 
 const programs = [
   {

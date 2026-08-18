@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, ReceiptText, HeartHandshake, Mail, Phone } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Donate",
+  description:
+    "Support Highlands County veterans with a donation to the Veterans Council of Highlands County, a 501(c)(3) nonprofit organization in Sebring, FL.",
+};
 
 export default function DonatePage() {
   return (

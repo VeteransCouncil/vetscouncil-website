@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HandHeart, Users2, Building2, Megaphone } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Get Involved",
+  description:
+    "Join the Veterans Council of Highlands County as a member organization, volunteer, corporate partner, or by spreading the word on Facebook.",
+};
 
 const ways = [
   {
